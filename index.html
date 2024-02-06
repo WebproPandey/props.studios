@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-props</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="loader"
+        class="loader absolute bg-[#f4f0ea]  top-0 z-[99999] w-[100vw] h-[100hvh]  flex justify-center items-center ">
+        <div class="overlay-content w-[40%]  ">
+            <div class="images relative h-[100vh] flex justify-center items-start  ">
+                <div class="image-holder relative overflow-hidden flex w-[60%] h-[50%] mt-[2vh] mx-[auto] z-[2] ">
+
+                    <img src="https://props.studiolumio.com/preloader.jpeg"
+                        class="image  image1 object-cover object-center h-[100%] w-[10%]" alt="">
+
+                    <img src="https://props.studiolumio.com/preloader.jpeg"
+                        class="image  image1 object-cover object-center h-[100%] w-[10%]" alt="">
+                    <img src="https://props.studiolumio.com/preloader.jpeg"
+                        class="image  image1 object-cover object-center h-[100%] w-[10%]" alt="">
+                    <img src="https://props.studiolumio.com/preloader.jpeg"
+                        class="image  image1 object-cover object-center h-[100%] w-[10%]" alt="">
+                    <img src="https://props.studiolumio.com/preloader.jpeg"
+                        class="image  image1 object-cover object-center h-[100%] w-[10%]" alt="">
+                    <img src="https://props.studiolumio.com/preloader.jpeg"
+                        class="image  image1 object-cover object-center h-[100%] w-[10%]" alt="">
+                    <img src="https://props.studiolumio.com/preloader.jpeg"
+                        class="image  image1 object-cover object-center h-[100%] w-[10%]" alt="">
+                    <img src="https://props.studiolumio.com/preloader.jpeg"
+                        class="image  image1 object-cover object-center h-[100%] w-[10%]" alt="">
+                    <img src="https://props.studiolumio.com/preloader.jpeg"
+                        class="image  image1 object-cover object-center h-[100%] w-[10%]" alt="">
+                    <img src="https://props.studiolumio.com/preloader.jpeg"
+                        class="image  image1 object-cover object-center h-[100%] w-[10%]" alt="">
+                    <img src="https://props.studiolumio.com/preloader.jpeg"
+                        class="image  image1 object-cover object-center h-[100%] w-[10%]" alt="">
+                </div>
+
+                <div
+                    class="texteffect  absolute bottom-0 h-[35vh] w-[70vw]  flex justify-center items-center overflow-hidden">
+                    <h1 class="text opacity-0  text-[15vw]  text-[#4d3d30] uppercase font-[700]">props</h1>
+                </div>
+
+                <div
+                    class="persent absolute bottom-0 h-[35vh] w-[70vw] flex flex-col justify-center items-center overflow-hidden">
+                    <h1 class="percenttext text-[12vw] text-[#4d3d30] font-[600]">0%</h1>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div
+        class="navbar  border-b-[1px]  z-[999] fixed top-0 h-[10vh] w-[100vw] bg-[#f4f0ea] flex flex-col justify-center  ">
+        <nav class="flex justify-between items-center px-[2vw]">
+            <div class="navlogo">
+                <a class="uppercase" href="#">props</a>
+            </div>
+
+
+            <div class="navmenu  flex items-center relative ustify-center gap-1">
+
+                <div class="lines h-[4vh] w-[2vw] relative flex flex-col justify-evenly">
+                    <div class="line1  absolute top-[30%]  h-[1px] bg-black w-[100%]  "></div>
+                    <div class="line2  absolute top-[60%] h-[1px] w-[100%] bg-black"></div>
+                </div>
+
+                <a class="menu  uppercase" href="#">menu</a>
+                <a class="close uppercase absolute top-0 left-[40%] opacity-0" href="#">close</a>
+            </div>
+            <div class="shopandcard h-[5vh] w-[15%]  flex justify-center pl-[3vw] items-center  gap-3">
+                <a class="uppercase" id="rightnav" href="#">shop</a>
+
+                <a class="uppercase" id="rightnav" href="#"><i class="ri-shopping-cart-line font-[1.1vh]"></i> cart(0)
+                </a>
+            </div>
+        </nav>
+    </div>
+    <div class="menubar z-[99] h-[100vh]  w-[100vw]  fixed top-[-100%] left-0">
+        <div class="up h-[30vw] w-[100vw] bg-[#f4f0ea] flex ">
+            <div class="left h-[30vw] w-[70vw ">
+                <div class="mainmenu h-[26vw]  pt-[4vw] w-[50vw]  flex justify-center items-center flex-col">
+                    <div class="fist h-[8vw] overflow-hidden w-[90%]  flex items-center justify-evenly">
+                        <a href="image1" class="menua text-[4vw] opacity-0 font-[600] uppercase">home</a>
+                        <a href="image2" class="menua text-[4vw] opacity-0 font-[600] uppercase">shop</a>
+                        <a href="image3" class="menua text-[4vw] opacity-0 font-[600] uppercase">about us</a>
+                    </div>
+                    <div class="sec h-[8vw] overflow-hidden  w-[90%] flex justify-evenly items-center ">
+                        <a href="image4" class="menua text-[4vw] opacity-0 font-[600] uppercase">lookbook</a>
+                        <a href="image5" class="menua text-[4vw] opacity-0 font-[600] uppercase">contact</a>
+                    </div>
+                </div>
+                <div class="fotters h-[4vw] w-[70vw]  flex justify-around items-center uppercase">
+                    <h1 class=" fotterh1 opacity-0 text-[1vw]">made by: <b>studio lumio</b></h1>
+                    <h1 class=" fotterh1 opacity-0 text-[1vw]">typography: <b>googkr fonts</b></h1>
+                    <h1 class=" fotterh1 opacity-0 text-[1vw]">images: <b>freepik,envato</b></h1>
+                    <div class=" fotterh1 opacity-0 h-[100%] w-[20vw] flex flex-col uppercase ">
+                        <h1 class="  text-[1vw]">privacy policy</h1>
+                        <h1 class="  text-[1vw]">termas & condition</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="right h-[30vw] w-[30vw]  flex pb-[1vw] justify-center items-end  ">
+                <div class="menuimage relative h-[22vw]  w-[22vw] shery">
+                            <img id="image1" src="https://images.ctfassets.net/tuohjudwxvzs/9Ff7V1JqJwu0cfYEJ4kWt/ef7b0e440769d005afdc9466fae600a0/chairs_nemcam.png"
+                            class="object-cover object-center h-[100%] w-[100%]" alt="">
+                            <img id="image2" src="https://images.ctfassets.net/tuohjudwxvzs/4mnTMMdY2Om1Fi61u6hF7O/795d642216b2551c90e946756d4a8386/lamps_v27n9t.png"
+                            class="object-cover object-center h-[100%] w-[100%]" alt="">
+                            <img id="image3" src="https://images.ctfassets.net/tuohjudwxvzs/3l4UZJUfxYdqFZnPT4qQ5f/10a77a6ca201d02798df92cc48cc250a/tables_gokhgz.png"
+                            class="object-cover object-center h-[100%] w-[100%]" alt="">
+                            <img id="image4" src="https://props.studiolumio.com/props/pngwing_jrtqph.png"
+                            class="object-cover object-center h-[100%] w-[100%]" alt="">
+                            <img id="image5" src="https://images.ctfassets.net/tuohjudwxvzs/65ny4U8lAazq9TaDLJ6hkC/b2fb5faa333f58b45dae5e782ed9aca4/about_fj2cja.png"
+                            class="object-cover object-center h-[100%] w-[100%]" alt="">
+                  
+             
+                </div>
+            </div>
+        </div>
+        <div class="down h-[20vw] w-[100vw] bg-black opacity-[.6] "></div>
+    </div>
+
+    <div class="container">
+
+        <div class="page1 min-h-[100vh] relative  w-[100vw] ">
+            <video
+                src="https://videos.ctfassets.net/tuohjudwxvzs/63NXWxKzgcVQtMocb9VAjQ/9b2c36df742557dadeba6f5826982564/home_dmgpke.mp4"
+                class="video absolute top-[-15%] h-[100%] scale-[1.2] w-[100%] object-cover object-center"></video>
+
+            <div class=" textbox   flex  flex-col justify-center  ">
+                <div
+                    class="h-[80vh] props   w-[100%]  flex justify-center items-start relative top-[-20%]  overflow-hidden text-[32vw] text-[#f4f0ea] uppercase font-[600]  ">
+                    <h1>props</h1>
+                </div>
+                <div class="h-[25vh] z-[9] w-[25%] px-[3vw]  ml-[3vw] flex flex-col justify-center gap-[2vw] ">
+                    <p class="text-[1.1vw] text-white font-[600]">
+                        ADD ELEGANCE AND CHARM TO YOUR
+                        SPACE WITH FURNITURE THAT
+                        EXPRESSES YOUR INDIVIDUALITY
+                    </p>
+                    <div id="btn"
+                        class="btn border-[1px] opacity-0 rounded-[28px] w-[75%]  px-[.4vw] py-[.3vw] flex  justify-between items-center">
+
+                        <div
+                            class="btntext  h-[4vh] w-[80%]  flex flex-col justify-center items-center overflow-hidden relative">
+                            <a href="#"
+                                class="up absolute  top-[-60%]  text-[1vw] text-white font-[600]  uppercase">explore
+                                collection</a>
+                            <a href="#" class="down absolute top-1 text-[1vw] text-white font-[600]  uppercase">explore
+                                collection</a>
+
+                        </div>
+
+                        <div
+                            class="arrow flex justify-center items-center overflow-hidden  relative bg-[#f4f0ea] border-[1px] rounded-[50%] p-[1vw] h-[3vh] w-[3vh] ">
+                            <i class="fist ri-arrow-right-line absolute  left-1 font-[600]"></i>
+                            <i class="second ri-arrow-right-line absolute left-[25vw] font-[600] "></i>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="sectextbox  min-h-[100vh] w-[100%] relative  flex justify-start items-center pl-[3vw]  ">
+                    <div class="midcontent min-h-[100vh]  w-[60%]  relative flex items-end flex-col">
+                        <div class="heading h-[40vh] w-fit ">
+                            <div class="h-[10vh] overflow-hidden  relative  ">
+                                <h1 class="text-[4vw] font-[600]    text-white relative top-[70%] text-end">WHERE STYLE
+                                </h1>
+                            </div>
+
+                            <div class="h-[10vh] overflow-hidden  relative  ">
+                                <h1 class="text-[4vw] font-[600]   text-white relative top-[70%] text-end">ENDURES:
+                                    TIMELES</h1>
+                            </div>
+
+                            <div class="h-[10vh] overflow-hidden  relative  ">
+                                <h1 class="text-[4vw] font-[600]   text-white relative top-[70%] text-end">FURNITURE FOR
+                                </h1>
+                            </div>
+
+                            <div class="h-[10vh] overflow-hidden  relative  ">
+                                <h1 class="text-[4vw] font-[600]    text-white relative top-[70%] text-end">YOUR STORY
+                                </h1>
+                            </div>
+
+
+                        </div>
+                        <div class="imgbox mb-[20vw] h-[45vh] w-[24vw]  flex justify-center items-start ">
+                            <div class="img h-[100%] w-[100%] bg-white relative">
+                                <img src="https://props.studiolumio.com/props/pngwing_maqofy.png"
+                                    class="h-[100%] w-[100%] object-cover object-center" alt="">
+                                <div
+                                    class="imgtext h-[10vh] px-[1vw] w-[100%] absolute left-0 top-[98%] bg-white opacity-0  flex flex-col justify-center items-start">
+                                    <h2 class="text-[.9vw] text-[#4d3d30] ">sitous chain -</h2>
+                                    <h2 class="text-[.7vw] font-[900]  text-[#4d3d30] ">$350.00</h2>
+                                    <div class="w-[100%] flex items-end  justify-end ">
+                                        <h2 class="text-[.9vw] text-center text-[#4d3d30] ">product of the day</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="lastheading absolute  top-[80%] w-[100%] text-[7vw] tracking-tighter  font-[600] text-white  flex justify-center items-start ">
+                        PRODUCT OF THE DAY </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="page2 min-h-[100vh] relative w-[100vw] bg-[#f4f0ea] ">
+            <div class="up h-[80vh] w-[100vw] flex absolute top-[-20%] bg-[#f4f0ea]">
+                <div class="left relative h-[100%] w-[35%] flex justify-center">
+                    <div class="img h-[60vh] w-[50vh] ">
+                        <img src="https://images.ctfassets.net/tuohjudwxvzs/65ny4U8lAazq9TaDLJ6hkC/b2fb5faa333f58b45dae5e782ed9aca4/about_fj2cja.png"
+                            class="h-[100%] w-[100%] object-cover object-center" alt="">
+                    </div>
+                    <div class="secimg absolute top-[40%]  right-0 h-[40vh] w-[35vh] ">
+                        <img src="https://images.ctfassets.net/tuohjudwxvzs/718f4qr6MCNuII02jzFN8h/111a7ebb9cc3b633c792313184ece2fa/about-sm_toxebw.png"
+                            class="h-[100%] w-[100%] object-cover object-center ">
+                    </div>
+
+                </div>
+                <div class="right h-[100%]  w-[65%] pl-[8vw] mt-[2vw] ">
+                    <h1 class="pera text-[3vw] tracking-[.1vw] leading-[4vw]  text-[#4d3d30] font-[600]  opacity-0 ">
+                        WELCOME TO OUR FURNITURE SHOP, </h1>
+                    <h1 class="pera text-[3vw] tracking-[.1vw] leading-[4vw]  text-[#4d3d30] font-[600]  opacity-0 ">
+                        WHERE TIMELESS AND STYLISH </h1>
+                    <h1 class="pera text-[3vw] tracking-[.1vw] leading-[4vw]  text-[#4d3d30] font-[600]  opacity-0 ">
+                        DESIGNS MEET STORYTELLING.</h1>
+                    <div class="h-[15vh] w-[20vw] mt-[2vw]">
+                        <p class="text-[1vw] text-[#4d3d30] ">Every piece of furniture in our collection tells a
+                            personal story. Custom-designed and personalized to enhance your home's aesthetics.ABOUT US
+                        </p>
+                    </div>
+                    <div
+                        class="btn border-[1px] border-[#4d3d30] mt-[3vw] rounded-[28px] w-[15%]  px-[.4vw] py-[.3vw] flex justify-between items-center">
+
+                        <div class="btntext h-[5vh] w-[80%]  flex flex-col overflow-hidden justify-center  relative">
+                            <a href="#"
+                                class="up absolute top-[-60%]  text-[1vw] text-[#4d3d30] font-[600]  uppercase">about
+                                us</a>
+                            <a href="#"
+                                class="down absolute top-1 text-[1vw] text-[#4d3d30] font-[600]  uppercase">about us</a>
+
+                        </div>
+
+
+                        <div
+                            class="arrow flex justify-center items-center overflow-hidden  relative bg-[#f4f0ea] border-[1px] rounded-[50%] p-[1vw] h-[3vh] w-[3vh] ">
+                            <i class="fist ri-arrow-right-line absolute  left-1 font-[600]"></i>
+                            <i class="second ri-arrow-right-line absolute left-[-55%] font-[600] "></i>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page3 min-h-[100vh] w-[100VW] relative bg-[#f4f0ea] ">
+            <h1 class="text-[3vw] font-[700] mb-[1vw] ml-[2vw] text-[#4d3d30]">FEATURED PRODUCTS</h1>
+            <div class="swiper h-[100vh] w-[100vw]">
+                <div class="productbox h-[70vh] w-[28vw] bg-[#e8e0d4]">
+                    <img src="https://props.studiolumio.com/props/pngwing_rm4d4k.png"
+                        class="object-cover object-center h-[80%] w-[100%]" alt="">
+                    <div class="about h-[20%] w-[100%]">
+                        <h1 class="text-[plain-light]  uppercase">component shelf -</h1>
+                        <h1 class="text-[plain-light]  text-[2.5vw] font-[500]">$700.00</h1>
+                    </div>
+                </div>
+
+                <div class="productbox h-[70vh] w-[28vw] bg-[#e8e0d4]">
+                    <img src="https://props.studiolumio.com/props/pngwing_maqofy.png"
+                        class="object-cover object-center h-[80%] w-[100%] " alt="">
+                    <div class="about h-[20%] w-[100%]">
+                        <h1 class="text-[plain-light]  uppercase">simple chair</h1>
+                        <h1 class="text-[plain-light]  text-[2.5vw] font-[500]">$700.00</h1>
+                    </div>
+                </div>
+                <div class="productbox h-[70vh] w-[28vw] bg-[#e8e0d4]">
+                    <img src="https://props.studiolumio.com/props/pngwing_gcffyk.png"
+                        class="object-cover object-center h-[80%] w-[100%] " alt="">
+                    <div class="about h-[20%] w-[100%]">
+                        <h1 class="text-[plain-light]  uppercase">night lamp-</h1>
+                        <h1 class="text-[plain-light]  text-[2.5vw] font-[500]">$900.00</h1>
+                    </div>
+                </div>
+                <div class="productbox h-[70vh] w-[28vw] bg-[#e8e0d4]">
+                    <img src="https://props.studiolumio.com/props/pngwing_hglcjj.png"
+                        class="object-cover object-center h-[80%] w-[100%] " alt="">
+                    <div class="about h-[20%] w-[100%]">
+                        <h1 class="text-[plain-light]  uppercase">slance dining table -</h1>
+                        <h1 class="text-[plain-light]  text-[2.5vw] font-[500]">$700.00</h1>
+                    </div>
+                </div>
+                <div class="productbox h-[70vh] w-[28vw] bg-[#e8e0d4]">
+                    <img src="https://props.studiolumio.com/props/pngwing_qsjfq0.png"
+                        class="object-cover object-center h-[80%] w-[100%] " alt="">
+                    <div class="about h-[20%] w-[100%]">
+                        <h1 class="text-[plain-light] uppercase">woven chair -</h1>
+                        <h1 class="text-[plain-light]  text-[2.5vw] font-[500]">$1,300.00</h1>
+                    </div>
+                </div>
+                <div class="productbox h-[70vh] w-[28vw] bg-[#e8e0d4]">
+                    <img src="https://props.studiolumio.com/props/pngwing_fb1gf6.png"
+                        class="object-cover object-center h-[80%] w-[100%] " alt="">
+                    <div class="about h-[20%] w-[100%]">
+                        <h1 class="text-[palin-light] uppercase">plush-white chair-</h1>
+                        <h1 class="text-[plain-light]  text-[2.5vw] font-[500]">$1,200.00</h1>
+                    </div>
+                </div>
+                <div class="productbox h-[70vh] w-[28vw] bg-[#e8e0d4]">
+                    <img src="https://props.studiolumio.com/props/pngwing_rm4d4k.png"
+                        class="object-cover object-center h-[80%] w-[100%]" alt="">
+                    <div class="about h-[20%] w-[100%]">
+                        <h1 class="text-[palin-light] uppercase">component shelf-</h1>
+                        <h1 class="text-[plain-light]  text-[2.5vw] font-[500]">$1,500.00</h1>
+                    </div>
+                </div>
+                <div class="productbox h-[70vh] w-[28vw] bg-[#e8e0d4]">
+                    <img src="https://props.studiolumio.com/props/pngwing_jrtqph.png"
+                        class="object-cover object-center h-[80%] w-[100%] " alt="">
+                    <div class="about h-[20%] w-[100%]">
+                        <h1 class="text-[plain-light]  uppercase">component shelf-</h1>
+                        <h1 class="text-[palin-light]  text-[2.5vw]">$1,200.00</h1>
+                    </div>
+                </div>
+                <div class="productbox h-[70vh] w-[28vw] bg-[#e8e0d4]">
+                    <img src="https://props.studiolumio.com/props/pngwing_maqofy.png"
+                        class="object-cover object-center h-[80%] w-[100%] " alt="">
+                    <div class="about h-[20%] w-[100%]">
+                        <h1 class="text-[plain-ligth] uppercase">simple chair</h1>
+                        <h1 class="text-[plain-light] text-[2.5vw]">$1,000.00</h1>
+                    </div>
+                </div>
+                <div class="productbox h-[70vh] w-[28vw] bg-[#e8e0d4]">
+                    <img src="https://props.studiolumio.com/props/pngwing_gcffyk.png"
+                        class="object-cover object-center h-[80%] w-[100%] " alt="">
+                    <div class="about h-[20%] w-[100%]">
+                        <h1 class="text-[plain-light] uppercase">night lamp-</h1>
+                        <h1 class="text-[plain-light] text-[2.5vw]">$900.00</h1>
+                    </div>
+                </div>
+                <div class="productbox h-[70vh] w-[28vw] bg-[#e8e0d4]">
+                    <img src="https://props.studiolumio.com/props/pngwing_jrtqph.png"
+                        class="object-cover object-center h-[80%] w-[100%] " alt="">
+                    <div class="about h-[20%] w-[100%]">
+                        <h1 class="text-[plain-light]  uppercase">component shelf-</h1>
+                        <h1 class="text-[palin-light] font-[500]  text-[2.5vw]">$700.00</h1>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="page4 min-h-[100vh] w-[100vw] relative bg-[#f4f0ea] flex pl-[50vw]">
+
+            <div class="product h-[100vh] flex-shrink-0 w-[70vw]  flex  justify-center items-center ">
+                <div class="left relative h-[50%] w-[30%]  ">
+                    <div class="img h-[100%] w-[100% ">
+                        <img src="https://images.ctfassets.net/tuohjudwxvzs/9Ff7V1JqJwu0cfYEJ4kWt/ef7b0e440769d005afdc9466fae600a0/chairs_nemcam.png"
+                            class="h-[100%] w-[100%] object-cover object-center" alt="">
+                    </div>
+                    <div class="secimg absolute top-[80%]  left-[5%] h-[60%] w-[60%] ">
+                        <img src="https://images.ctfassets.net/tuohjudwxvzs/6L5rxJi0JyWPr41ZbaoBbu/14ca5dda93736787b1f004c4da9ae3cd/chairs-mb_haymwf.png"
+                            class="h-[100%] w-[100%] object-cover object-center ">
+                    </div>
+
+                </div>
+                <div class="right h-[25vh] w-[30%] leading-6 pl-[2vw]">
+                    <h1 class="text-[plain-light] text-[5vw] font-[600] text-[#4d3d30] uppercase">chairs</h1>
+                    <div
+                        class="btn border-[1px] border-[#4d3d30] mt-[3vw] rounded-[28px] w-[50%]  px-[.4vw] py-[.3vw] flex justify-between items-center">
+
+                        <div
+                            class="btntext  h-[4vh] w-[80%]  flex flex-col justify-center items-center overflow-hidden relative">
+                            <a href="#"
+                                class="up absolute top-[-70%]  text-[1vw]  font-[600] text-[#4d3d30] uppercase">shop
+                                chairs</a>
+                            <a href="#"
+                                class="down absolute top-[.1vw] text-[1vw]  font-[600] text-[#4d3d30]  uppercase">shop
+                                chairs</a>
+
+                        </div>
+
+                        <div
+                            class="arrow flex justify-center items-center overflow-hidden  relative bg-[#4d3d30] border-[1px] rounded-[50%] p-[1vw] h-[3vh] w-[3vh] ">
+                            <i class="fist ri-arrow-right-line absolute  left-1 font-[600] text-white "></i>
+                            <i class="second ri-arrow-right-line absolute left-[-55%] font-[600] text-white  "></i>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="product h-[100vh] flex-shrink-0 w-[70vw]  flex  justify-center items-center ">
+                <div class="left relative h-[50%] w-[30%]  ">
+                    <div class="img h-[100%] w-[100% ">
+                        <img src="https://images.ctfassets.net/tuohjudwxvzs/3l4UZJUfxYdqFZnPT4qQ5f/10a77a6ca201d02798df92cc48cc250a/tables_gokhgz.png"
+                            class="h-[100%] w-[100%] object-cover object-center" alt="">
+                    </div>
+                    <div class="secimg absolute top-[80%]  left-[5%] h-[60%] w-[60%] ">
+                        <img src="https://images.ctfassets.net/tuohjudwxvzs/fO4HVOlQv4IKCfYs6cVay/74888751796597c8ee93425cfb9fc014/tables-mb_ljzlgt.png"
+                            class="h-[100%] w-[100%] object-cover object-center ">
+                    </div>
+
+                </div>
+                <div class="right h-[25vh] w-[30%] leading-6 pl-[2vw]">
+                    <h1 class="text-[plain-light] text-[5vw] font-[600] text-[#4d3d30] uppercase">tables</h1>
+                    <div
+                        class="btn border-[1px] border-[#4d3d30] mt-[3vw] rounded-[28px] w-[50%]  px-[.4vw] py-[.3vw] flex justify-between items-center">
+
+                        <div
+                            class="btntext  h-[4vh] w-[80%]  flex flex-col justify-center items-center overflow-hidden relative">
+                            <a href="#"
+                                class="up absolute top-[-80%]  text-[1vw]     font-[600] text-[#4f3d30] uppercase">shop
+                                table</a>
+                            <a href="#"
+                                class="down absolute top-[.1vw] text-[1vw]     font-[600] text-[#4f3d30]  uppercase">shop
+                                table</a>
+
+                        </div>
+
+                        <div
+                            class="arrow flex justify-center items-center overflow-hidden  relative bg-[#4d3d30] border-[1px] rounded-[50%] p-[1vw] h-[3vh] w-[3vh] ">
+                            <i class="fist ri-arrow-right-line absolute  left-1 font-[600] text-white "></i>
+                            <i class="second ri-arrow-right-line absolute left-[-55%] font-[600] text-white "></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product h-[100vh]  flex-shrink-0 w-[70vw]  flex  justify-center items-center ">
+                <div class="left relative h-[50%] w-[30%]  ">
+                    <div class="img h-[100%] w-[100% ">
+                        <img src="https://images.ctfassets.net/tuohjudwxvzs/4mnTMMdY2Om1Fi61u6hF7O/795d642216b2551c90e946756d4a8386/lamps_v27n9t.png"
+                            class="h-[100%] w-[100%] object-cover object-center" alt="">
+                    </div>
+                    <div class="secimg absolute top-[80%]  left-[5%] h-[60%] w-[60%] ">
+                        <img src="https://images.ctfassets.net/tuohjudwxvzs/7MJGYGfL2FnbkB3s6lRtqG/52e59a170fca6aa3b5085e64c911fc3c/lamps-mb_wtugjk.png"
+                            class="h-[100%] w-[100%] object-cover object-center ">
+                    </div>
+
+                </div>
+
+                <div class="right h-[25vh] w-[30%] leading-6 pl-[2vw]">
+                    <h1 class="text-[plain-light] text-[5vw] font-[600] text-[#4d3d30] uppercase">lamps</h1>
+                    <div
+                        class="btn border-[1px] border-[#4d3d30] mt-[3vw] rounded-[28px] w-[50%]  px-[.4vw] py-[.3vw] flex justify-between items-center">
+                        <div
+                            class="btntext  h-[4vh] w-[80%]  flex flex-col justify-center items-center overflow-hidden relative">
+                            <a href="#"
+                                class="up absolute top-[-80%]  text-[1vw]  font-[600] text-[#4f3d30] uppercase">shop
+                                lamps</a>
+                            <a href="#"
+                                class="down absolute top-[.1vw] text-[1vw]  font-[600] text-[#4f3d30]  uppercase">shop
+                                lamps</a>
+
+                        </div>
+
+                        <div
+                            class="arrow flex justify-center items-center overflow-hidden  relative bg-[#4d3d30]  border-[1px] rounded-[50%] p-[1vw] h-[3vh] w-[3vh] ">
+                            <i class="fist ri-arrow-right-line absolute  left-1 font-[600] text-white "></i>
+                            <i class="second ri-arrow-right-line absolute left-[-55%] font-[600] text-white  "></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="product h-[100vh]  flex-shrink-0 w-[70vw]  flex  justify-center items-center ">
+                <div class="left relative h-[50%] w-[30%]  ">
+                    <div class="img h-[100%] w-[100% ">
+                        <img src="https://images.ctfassets.net/tuohjudwxvzs/1sGOK3xQvFTpDjkAAUtKY1/34680bc73428b1a991e939b7d300e86a/shelve_wi8ipx_u6na85.webp"
+                            class="h-[100%] w-[100%] object-cover object-center" alt="">
+                    </div>
+                    <div class="secimg absolute top-[80%]  left-[5%] h-[60%] w-[60%] ">
+                        <img src="https://images.ctfassets.net/tuohjudwxvzs/5KTiBZ1fkTZx9H1ofXUrXA/4c5369d037c7058909e0594f4dee8859/shelves_qy9agg.webp"
+                            class="h-[100%] w-[100%] object-cover object-center ">
+                    </div>
+
+                </div>
+
+                <div class="right h-[25vh] w-[30%] leading-6 pl-[2vw]">
+                    <h1 class="text-[plain-light] text-[5vw] font-[600] text-[#4d3d30] uppercase">SHELVES</h1>
+                    <div
+                        class="btn border-[1px] border-[#4d3d30] mt-[3vw] rounded-[28px] w-[70%]  px-[.4vw] py-[.3vw] flex justify-between items-center">
+
+                        <div
+                            class="btntext  h-[4vh] w-[80%]  flex flex-col justify-center items-center overflow-hidden relative">
+                            <a href="#"
+                                class="up absolute top-[-80%]  text-[1vw]  font-[600 ] text-[#4d3d30] uppercase"> shop
+                                SHELVES</a>
+                            <a href="#"
+                                class="down absolute top-[.1vw] text-[1vw]  font-[600] text-[#4d3d30] uppercase"> shop
+                                SHELVES</a>
+
+                        </div>
+
+                        <div
+                            class="arrow flex justify-center items-center overflow-hidden  bg-[#4d3d30] relative  border-[1px] rounded-[50%] p-[1vw] h-[3vh] w-[3vh] ">
+                            <i class="fist ri-arrow-right-line absolute  left-1 font-[600]  text-white "></i>
+                            <i class="second ri-arrow-right-line absolute left-[-55%] font-[600]  text-white "></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+
+        </div>
+        <div
+            class="page5 min-h-[100vh] overflow-hidden bg-[#f4f0ea] px-[2vw] w-[100vw] flex justify-center items-center relative ">
+            <div
+                class="about  pt-[2vw] flex flex-col justify-start items-center h-[70vh] w-[70vh] bg-[#f4f0ea] absolute top-[40%] z-[9]">
+                <div class="h-[3vh] w-[100%] flex justify-center items-center overflow-hidden   relative  ">
+                    <h1 class="since1 absolute   ">since</h1>
+                </div>
+                <div class="h-[30vh] w-[100%] relative overflow-hidden ">
+                    <h1
+                        class="since2  absolute  left-[50%] translate-x-[-50%] text-[10vw] text-[plain-light] font-[900]">
+                        1985</h1>
+                </div>
+                <div class="h-[15vh] w-[60%] ">
+                    <p class="text-center">We create furniture masterpieces that tell stories and store memories that
+                        don’t fade with trends.</p>
+                </div>
+                <div
+                    class="btn border-[1px]   border-[#4d3d30] rounded-[28px] w-[50%]  px-[.4vw] py-[.3vw] flex justify-between items-center">
+                    <div
+                        class="btntext  h-[4vh] w-[80%]  flex flex-col justify-center items-center overflow-hidden relative">
+                        <a href="#" class="up absolute top-[-80%]  text-[1vw] text-[#4d3d30] font-[600] uppercase">
+                            explore collection</a>
+                        <a href="#" class="down absolute top-1 text-[1vw] text-[#4d3d30] font-[600]   uppercase">
+                            explore collection</a>
+
+                    </div>
+
+                    <div
+                        class="arrow flex justify-center items-center overflow-hidden  relative bg-[#4d3d30] border-[1px] rounded-[50%] p-[1vw] h-[3vh] w-[3vh] ">
+                        <i class="fist ri-arrow-right-line absolute  left-1 font-[600] text-white "></i>
+                        <i class="second ri-arrow-right-line absolute left-[-55%] font-[600] text-white"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="h-[120vh] w-[100%] relative overflow-hidden  ">
+                <div class="xVerticalScrollx  h-full relative ">
+                    <div class="scroll  absolute ">
+                        <div>
+                            <img src="https://images.ctfassets.net/tuohjudwxvzs/5GORaPm2QqtAJnsuZLFADa/da81b0786f9f1f6550bde9481af8184f/view-chair-with-textured-fur-fabric_4_arsbt5.jpg"
+                                class="bigimg  h-[100%] w-[100%] object-center scale-[1.5] object-cover" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="page6 min-h-[100vh] pl-[2vw] pt-[10vw] w-[100vw] flex  bg-[#f4f0ea]  relative">
+            <div class="leftimg h-[150vh] w-[70%] ">
+                <img class="h-[100%] w-[100%] object-cover object-center"
+                    src="https://images.ctfassets.net/tuohjudwxvzs/7DaJNUyolNUytcb3uPpTmb/b6be2f3ea327190e1bff4881cc96536f/home_nwku2r.png"
+                    alt="">
+            </div>
+            <div class="rightside h-[150vh] w-[30%] ">
+                <div class="texts h-[30vh] w-[80%]  pl-[1vw]">
+                    <p class="text-[1.2vw] font-[500]">At Props, we believe that your space should be your sanctuary. We
+                        are committed to creating furniture that transcends being just props and actively contributes to
+                        that.</p>
+                    <div
+                        class="btn border-[1px]  mt-[2vw]  border-[#4d3d30] rounded-[28px] w-[50%]  px-[.4vw] py-[.3vw] flex justify-between items-center">
+                        <div class="btntext h-[4vh] w-[80%]  flex flex-col justify-center overflow-hidden relative">
+                            <a href="#"
+                                class="up absolute top-[-80%]  text-[1vw] text-[#4f3d30] font-[600]  uppercase">lookbook</a>
+                            <a href="#"
+                                class="down absolute top-1 text-[1vw] text-[#4f3d30] font-[600]  uppercase">lookbook</a>
+                        </div>
+                        <div
+                            class="arrow flex justify-center items-center overflow-hidden  relative bg-[#4d3d30] border-[1px] rounded-[50%] p-[1vw] h-[3vh] w-[3vh] ">
+                            <i class="fist ri-arrow-right-line absolute  left-1 font-[600] text-white"></i>
+                            <i class="second ri-arrow-right-line absolute left-[-55%] font-[600] text-white"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="page7 min-h-[100vh] w-[100vw] relative bg-[#f4f0ea] flex  flex-col justify-center items-center leading-[10vw]">
+            <h1 class="page7text opacity-0 text-[10vw] text-[plain-light] text-[#4d3d30] font-[600]">SUBSCRIBE TO</h1>
+            <h1 class="page7text opacity-0 text-[10vw] text-[plain-light] text-[#4d3d30] font-[600]">OUR NEWSLETTER</h1>
+            <div
+                class="card leading-7 h-[25vh] flex flex-col justify-center items-center  w-[30%] absolute top-[70%] bg-[#e8e0d4]">
+                <h1>Never miss out, Stay updated</h1>
+                <div
+                    class="email rounded-[28px] leading-4 h-[2vh] w-[60%] flex justify-around  border-[#4d3d30] border-[1px] items-center px-[1vh] py-[1.3vw]">
+                    <a class="text-[plain-light] text-[#4d3d30]" href="#">@email.com</a>
+                    <div
+                        class="arrow flex justify-center items-center relative border-[#4d3d30] bg-[#4d3d30] border-[1px] rounded-[50%] p-[1vw] h-[3vh] w-[3vh] overflow-hidden">
+                        <i class="ri-arrow-right-line font-[600] text-white"></i>
+                        <i class="ri-arrow-right-line absolute left-[-50%] font-[600] text-white "></i>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="page8 h-[100vh] w-[100vw] bg-[#f4f0ea] relative  flex items-end">
+
+            <div class="h-[85vh] w-[100%] relative overflow-hidden  ">
+                <div class="xVerticalScrollx  h-full relative ">
+                    <div class="scroll  absolute ">
+                        <div>
+                            <!-- <img src="./fotter.webp" alt="" srcset=""> -->
+                            <img src="https://images.ctfassets.net/tuohjudwxvzs/5GORaPm2QqtAJnsuZLFADa/da81b0786f9f1f6550bde9481af8184f/view-chair-with-textured-fur-fabric_4_arsbt5.jpg"
+                                class="bigimg brightness-[.9]  h-[100%] w-[100%] object-center scale-[1.5] object-cover"
+                                alt="">
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="overlay h-[85vh] w-[100%] absolute flex flex-col justify-between  ">
+                <div class="fotternav h-[12vh] w-[100%] flex justify-between">
+                    <div class="navleft h-[100%] w-[60%] flex">
+                        <div class="fottera h-[100%] w-[20%]  uppercase   ">
+
+                            <div class="box h-[1.2vw] w-[100%]">
+                                <h1><a class="up " href="#">home</a></h1>
+                                <h1><a class="down" href="#">home</a></h1>
+                            </div>
+                            <div class="box h-[1.2vw] w-[100%]">
+                                <h1><a class="up " href="#">shop</a></h1>
+                                <h1><a class="down" href="#">shop</a></h1>
+                            </div>
+                            <div class="box h-[1.2vw] w-[100%]">
+                                <h1><a class="up " href="#">about us</a></h1>
+                                <h1><a class="down" href="#">about us</a></h1>
+                            </div>
+
+                        </div>
+                        <div class="fottera h-[100%] w-[20%] text-[plain-light]  uppercase  ">
+                            <div class="box h-[1.2vw] w-[100%] ">
+                                <h1><a class="up " href="#">tables</a></h1>
+                                <h1><a class="down" href="#">tables</a></h1>
+                            </div>
+                            <div class="box h-[1.2vw] w-[100%]">
+                                <h1><a class="up " href="#">chairs</a></h1>
+                                <h1><a class="down" href="#">chairs</a></h1>
+                            </div>
+                            <div class="box h-[1.2vw] w-[100%]">
+                                <h1><a class="up " href="#">lamps</a></h1>
+                                <h1><a class="down" href="#">lamps</a></h1>
+                            </div>
+                        </div>
+                        <div class="fottera h-[100%] w-[20%] text-[plain-light] uppercase   ">
+                            <div class="box h-[1.2vw] w-[100%] ">
+                                <h1><a class="up" href="#">shop all</a></h1>
+                                <h1><a class="down" href="#">shop all</a></h1>
+                            </div>
+                            <div class="box h-[1.2vw] w-[100%]">
+                                <h1><a class="up " href="#">loolbook</a></h1>
+                                <h1><a class="down" href="#">loolbook</a></h1>
+                            </div>
+                            <div class="box h-[1.2vw] w-[100%]">
+                                <h1><a class="up " href="#">featured</a></h1>
+                                <h1><a class="down" href="#">featured</a></h1>
+                            </div>
+
+                        </div>
+                        <div class="fottera h-[100%] w-[25%] text-[plain-light] uppercase  ">
+                            <div class="box h-[1.2vw] w-[100%] ">
+                                <h1><a class="up" href="#">contact</a></h1>
+                                <h1><a class="down" href="#">contact</a></h1>
+                            </div>
+                            <div class="box h-[1.2vw] w-[100%]">
+                                <h1><a class="up " href="#">privacy policy</a></h1>
+                                <h1><a class="down" href="#">privacy policy</a></h1>
+                            </div>
+                            <div class="box h-[1.2vw] w-[100%]">
+                                <h1><a class="up " href="#">terms & condition</a></h1>
+                                <h1><a class="down" href="#">terms & condition</a></h1>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="navright h-[100%] w-[20%] mr-[3vh] flex  flex-col items-end pr-[1vh]">
+                        <h1><a href="#" class="text-white text-[1vw] uppercase font-[600] ">awwwards</a></h1>
+                        <h1><a href="#" class="text-white text-[1vw] uppercase font-[600] ">twitter</a></h1>
+                        <h1><a href="#" class="text-white text-[1vw] uppercase font-[600] ">instagram</a></h1>
+                    </div>
+                </div>
+                <div
+                    class="texteffect h-[35vh] w-[100%]  flex justify-center items-center overflow-hidden text-[13vw]  text-white  uppercase font-[700]">
+                    props</div>
+
+                <div
+                    class="fotterbottom h-[12vh] w-[100%] pl-[2vw] pr-[4vw] bg-[#0000002b] font-[Extralight] flex justify-between items-center">
+                    <h1 class=" text-white opacity-[1] uppercase font-[600] ">@2023</h1>
+                    <h1 class=" text-white opacity-[1]  uppercase font-[600]">made by:studiolumio</h1>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"
+        integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"
+        integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

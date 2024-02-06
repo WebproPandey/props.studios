@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family:Extralight ;
+    src: url(./3534416bbfdcc9be-s.p.ttf);
+}
+
+
+*
+{
+    font-family:Extralight ;
+}
+
+.image-holder img
+{
+    left: -20%;
+    position: absolute;
+}
+
+.swiper
+{
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.swiper .productbox
+{
+    flex-shrink:0 ;
+    margin-left: 10px;
+    display: inline-block;
+}
+@keyframes swiper {
+    0%
+    { 
+      transform: translateX(0%);
+    }
+    100%
+    {
+        transform: translateX(-700%);
+    }
+    
+}
+
+.swiper::-webkit-scrollbar
+{
+    display: none;
+}
+.btntext .up
+{
+    transition: all ease 0.5s;
+}
+.btntext .down
+{
+  transition: all ease .9s;
+}
+.arrow .fist
+{
+    transition:  all ease 0.5s;
+}
+.arrow .second
+{
+    transition: all ease 0.9s;
+}
+
+.fottera
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.menuimage img
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+}
+
+._canvas_container
+{
+    z-index: 9999999999 !important;
+}
+
+.fottera .box
+{
+    height: 1.5vw;
+    width: 100%;
+     display:  flex;
+     justify-content: end;
+     flex-direction: column;
+     line-height:1.1vw;
+     overflow: hidden;
+     position: relative;
+     margin-top: 1vh;
+}
+.fottera .box .up
+{
+    position: absolute;
+    top: -100%;
+    transition:  all ease 0.7s;
+}
+.fottera .box .down
+{
+    position: absolute;
+    top: 0%;
+    transition:  all ease .9s;
+}
+
+.fottera .box h1  a
+{
+
+    color: white;
+    font-size: 1vw;
+    font-weight: 600;
+    margin-left: 1vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.fottera a::after
+{
+    content: '';
+    position: absolute;
+    top: 90%;
+    left: 0%;
+    height: 1px; 
+    width: 0%;
+    background-color: white;
+    transition: all ease 1s;
+}
+.fottera a:hover::after 
+{
+  width: 100%;
+  transform: translateX(110%);
+}
+.fottera a:hover
+{
+    color: black;
+}
+
+.fotterbottom
+{
+    background: black;
+}
